@@ -10,6 +10,18 @@ body{
     text-align: center;   
 }
 
+#rcorners1 {
+    align-content: center;
+
+    border-radius: 25px;
+    border: 2px solid rgb(34, 3, 79);
+    background: rgb(54, 21, 131);    
+    padding: 20px; 
+    width: 400px; 
+    margin: auto;
+     
+ }
+
 #rcorners2 {
     align-content: center;
 
