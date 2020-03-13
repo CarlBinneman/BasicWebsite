@@ -1,8 +1,23 @@
 p{
-    color : #2a4120;
+    color: #d2e6ca;
     text-align: center;
 }
 
 body{
-    text-align: center;
+    background: url('Images/download.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;   
 }
+
+#rcorners2 {
+    align-content: center;
+
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    background: rgb(66, 104, 13);    
+    padding: 20px; 
+    width: 400px; 
+    margin: auto;
+     
+ }
