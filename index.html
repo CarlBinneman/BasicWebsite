@@ -11,20 +11,33 @@
 			<form id="form">
 				<h1>Applicant Details</h1>
 				<li>
-					<label>Full Name</label>
-					<input type="text" id="userinput" />
+					<label>Full Name <span class="requiredError"></span></label>
+					<input type="text" id="fullName" class="name" name="name" />
+					<span class="nameError" aria-live="polite"></span>
 				</li>
 				<li>
-					<label>Email</label>
-					<input type="email" id="userinput" />
+					<label
+						>Email <span class="requiredError requiredEmail"></span
+					></label>
+					<input type="email" id="email" name="mail" minlength="0" />
+					<span class="error errorPopUp" aria-live="polite"></span>
 				</li>
 				<li>
-					<label>Phone Number</label>
-					<input type="number" id="userinput" />
+					<label
+						>Phone Number
+						<span class="requiredError requiredPhone"></span
+					></label>
+					<input
+						type="text"
+						id="phoneNumber"
+						class="phoneNumber"
+						name="phoneNumber"
+					/>
+					<span class="phoneError" aria-live="polite"></span>
 				</li>
 				<li>
 					<label>Job Title</label>
-					<select id="cars" name="cars">
+					<select id="jobTitle" name="jobTitle">
 						<option value="Senior UI Designer">
 							Senior UI Designer</option
 						>
@@ -56,20 +69,21 @@
 					</div>
 				</li>
 				<li>
-					<label>LinkedIn Link</label>
-					<input type="url" id="userinput" />
+					<label>LinkedIn Link <span class="requiredError requiredUrl"></span
+						></label></label>
+					<input type="text" id="url" class="url"
+					name="url"/>
+					<span class="urlError" aria-live="polite"></span>
 				</li>
 				<li>
-					<label>Cover Letter</label>
-					<input type="text" id="userinput" />
+					<label>Cover Letter <span class="requiredError requiredLetter"></span
+						></label>
+					<input type="text" id="coverLetter" class="coverLetter"
+					name="coverLetter"/>
+					<span class="letterError" aria-live="polite"></span>
 				</li>
 				<li>
-					<input
-						type="button"
-						onclick="addTo()"
-						value="Submit"
-						id="submitBtn"
-					/>
+					<input type="submit" value="Submit" id="btn" />
 				</li>
 			</form>
 		</div>

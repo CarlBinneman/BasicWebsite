@@ -53,6 +53,14 @@ input:focus {
 input:hover {
 	background: rgba(0, 0, 0, 0.07);
 }
+input:invalid {
+	border-color: #900;
+	background-color: #fdd;
+}
+
+input:focus:invalid {
+	outline: none;
+}
 li {
 	list-style: none;
 	display: grid;
@@ -61,7 +69,7 @@ li {
 li:last-child {
 	padding-top: 20px;
 }
-#submitBtn {
+#btn {
 	outline: none;
 	background: #33852f;
 	width: 100%;
@@ -139,4 +147,52 @@ select:focus {
 }
 select:hover {
 	background: rgba(0, 0, 0, 0.07);
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+	color: rgba(0, 0, 0, 0.6);
+}
+/* This is our style for the invalid fields */
+input:invalid {
+	background-color: #fdd;
+}
+
+input:focus:invalid {
+	outline: none;
+}
+
+/* This is the style of our error messages */
+.errorPopUp {
+	width: 100%;
+	padding: 0;
+
+	font-size: 80%;
+	color: white;
+	background-color: #a73838;
+	border-radius: 0 0 5px 5px;
+
+	box-sizing: border-box;
+}
+
+.errorPopUp.active {
+	padding: 0.3em;
+}
+input.invalid {
+	border-color: #a73838;
+	background-color: #fdd;
+}
+
+input:focus.invalid {
+	outline: none;
+}
+.requiredError {
+	color: #a73838;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: capitalize;
+	letter-spacing: 0.06em;
 }
