@@ -88,10 +88,21 @@ li:last-child {
 h1 {
 	padding: 4px 0;
 	color: #33852f;
-	font-size: 24px;
+	font-size: 25px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding-bottom: 20px;
+	margin: 20px 0 0;
+}
+h2 {
+	padding: 4px 0;
+	color: #4f4f4f;
+	font-size: 16px;
+	font-weight: 430;
+	text-transform: uppercase;
+	margin: 6px 0 35px;
+}
+.boldText {
+	font-weight: 550;
 }
 label {
 	display: block;
@@ -130,7 +141,7 @@ select::-ms-expand {
 }
 .select-icon {
 	position: absolute;
-	top: 56%;
+	margin-top: 7%;
 	right: 11%;
 	width: 60px;
 	height: auto;
