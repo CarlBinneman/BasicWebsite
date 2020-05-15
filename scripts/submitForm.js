@@ -110,9 +110,9 @@ function processSubmittedData() {
 			coverLetter: document.getElementById("coverLetter").value,
 		};
 		applicantDataArray.push(applicantData);
-		document.forms[0].reset(); // to clear the form for the next entries
 
-		//for display purposes
-		console.log("added", { applicantDataArray });
+		// for display purposes
+		console.log("Added : ", applicantDataArray[0]);
+		document.forms[0].reset(); // to clear the form for the next entries
 	}
 }
