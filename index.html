@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Job Application Form <Title></Title></title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <!--  CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <!--  JavaScript Files -->
+    <script src="main.js"></script>
+</head>
+<body>
+
+<!-- ================================
+       START Form AREA
+================================= -->
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="form">
+                    <form id="myform" onsubmit="return Submit()">
+                        <div class="row">
+                            <div class="column">
+                               <div class="form-group">
+							   <h1>Job Application Form </h1>
+                                      <p>Please fill in this form.</p>
+                                <hr>
+                                   <label class="label-text">
+                                       Full Name <span class="span-star-color">*</span>
+                                   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                   <input class="form-control" type="text" name="name" id="name" placeholder="Full Name">
+                                   <div id="result"></div>
+                               </div>
+                            </div><!-- end column -->
+                            <br>
+                            <div class="column">
+                               <div class="form-group">
+                                   <label class="label-text">
+                                       Email <span class="span-star-color">*</span>
+                                   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                   <input class="form-control" type="email" name="email" id="email" placeholder="Email Address">
+                               </div>
+                            </div><!-- end column -->
+                            <br>
+                            <div class="column">
+                               <div class="form-group">
+                                   <label class="label-text">
+                                       Phone Number <span class="span-star-color">*</span>
+                                   </label>&nbsp;&nbsp;
+                                   <input class="form-control" type="tel" name="phone" id="phone" placeholder="Your 10 Digit Phone Number With No Space">
+                               </div>
+                            </div><!-- end column -->
+                            <br>
+                            <div class="column">
+                               <div class="form-group">
+                                   <label class="label-text">
+                                       Job Opportunity <span class="span-star-color">*</span>
+                                   </label>
+                                   <select  class="form-control" name="Job Opportunity" id="jobs">
+                                    <option value="Select Job.">Select Job.</option>
+                                    <option value="Sr. UI Designer.">Sr. UI Designer.</option>
+                                    <option value="Full-stack Developer">Full-stack Developer</option>
+                                    <option value="Sr. Product Designer">Sr. Product Designer</option>
+                                    <option value="Back-End Developer">Back-End Developer</option>
+                                    <option value="Front-End Developer">Front-End Developer</option>
+                                  </select>
+                               </div>
+                            </div><!-- end column -->
+                            <br>
+                            <div class="column">
+                                <div class="form-group">
+                                    <label class="label-text">
+                                        LinkedIn Url
+                                    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input class="form-control" type="text" id="url" name="url" placeholder="Your Profile LinkedIn Url">
+                                </div>
+                             </div><!-- end column -->
+                             <br>
+                             <div class="column">
+                                <div class="form-group">
+                                    <label class="label-text">
+                                        Cover Letter <span class="span-star-color">*</span>
+                                    </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <!--<input class="form-control" type="text" name="cover" id="cover" placeholder="Your Cover Letter">-->
+									<form action="/action_page.php">
+                                          <input class="form-control" type="file" id="cover" name="cover">
+                                     </form>
+                                </div>
+                             </div><!-- end column -->
+                             <br>
+                            <div class="column">
+                                <button class="button" type="submit">
+                                    Submit
+                                </button>
+                            </div><!-- end column -->
+                            <div class="column">
+                                <p id="demo"></p>
+                            </div><!-- end column -->
+                        </div><!-- end row -->
+                    </form>
+                </div><!-- end form -->
+            </div><!-- end column -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</body>
+</html>
