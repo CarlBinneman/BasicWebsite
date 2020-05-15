@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="FormStyling.css" rel="stylesheet" type="text/css" />
+		<title>Job Application Form</title>
+	</head>
+	<body>
+		<div class="column">
+            <header>
+                <h2>Job application form</h1>
+                <p>
+                    Fill in the job application form below. Fields with <span class="required">*</span> are
+                    required.
+                </p>
+            </header>
+			
+
+			<form class="job-application">
+				<div class="row">
+					<label>Full name </label><span class="required">*</span>
+					<input type="text" name="full-name" pattern="[a-zA-Z][a-zA-Z ]{2,}" required />
+				</div>
+
+				<div class="row">
+					<label>E-mail address </label><span class="required">*</span>
+					<input type="text" name="email" required />
+				</div>
+
+				<div class="row">
+					<label>Phone number </label>
+					<input
+						type="text"
+						name="phone-number"
+						maxlength="10"
+					/>
+				</div>
+
+				<div class="row">
+					<label>Job interest </label><span class="required">*</span>
+					<select id="job-title" required>
+						<option>Select</option>
+						<option>Sr. UI Designer</option>
+						<option>Full-stack Developer</option>
+						<option>Sr. Product Designer</option>
+						<option>Back-end Developer</option>
+						<option>Front-end Developer</option>
+					</select>
+				</div>
+
+				<div class="row">
+					<label>LinkedIn profile link </label> 
+					<input name="linkedin-link" type="url" />
+				</div>
+
+				<div class="row">
+					<label>Cover letter </label><span class="required">*</span>
+					<textarea
+						name="cover-letter"
+						type="textarea"
+						rows="10"
+						cols="30"
+						required
+					></textarea>
+				</div>
+
+                <div class="row">
+                    <input
+					type="submit"
+					value="Submit"
+					name="submitButton"
+				    />
+                </div>
+				
+			</form>
+		</div>
+        <script src="scripts/form-validation.js"></script>
+        <script src="main.js"></script>
+	</body>
+</html>
