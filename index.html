@@ -10,22 +10,24 @@
 		<div class="column">
             <header>
                 <h2>Job application form</h1>
-                <p>
+                <h4>
                     Fill in the job application form below. Fields with <span class="required">*</span> are
                     required.
-                </p>
+                </h4>
             </header>
 			
 
 			<form class="job-application">
 				<div class="row">
 					<label>Full name </label><span class="required">*</span>
-					<input type="text" name="full-name" pattern="[a-zA-Z][a-zA-Z ]{2,}" required />
+                    <input type="text" name="full-name" pattern="[a-zA-Z][a-zA-Z ]{2,}" placeholder="Jane Smith"/>
+                    <small>Error message</small>
 				</div>
 
 				<div class="row">
 					<label>E-mail address </label><span class="required">*</span>
-					<input type="text" name="email" required />
+                    <input type="text" name="email" placeholder="Enter your email address"/>
+                    <small>Error message</small>
 				</div>
 
 				<div class="row">
@@ -33,36 +35,40 @@
 					<input
 						type="text"
 						name="phone-number"
-						maxlength="10"
+                        maxlength="10"
+                        placeholder="Enter your phone number"
 					/>
 				</div>
 
 				<div class="row">
 					<label>Job interest </label><span class="required">*</span>
-					<select id="job-title" required>
+					<select id="job-title">
 						<option>Select</option>
 						<option>Sr. UI Designer</option>
 						<option>Full-stack Developer</option>
 						<option>Sr. Product Designer</option>
 						<option>Back-end Developer</option>
 						<option>Front-end Developer</option>
-					</select>
+                    </select>
+                    <small>Error message</small>
 				</div>
 
 				<div class="row">
 					<label>LinkedIn profile link </label> 
-					<input name="linkedin-link" type="url" />
+                    <input name="linkedin-link" type="url" placeholder="Enter your LinkedIn profile link"/>
+                    
 				</div>
 
 				<div class="row">
 					<label>Cover letter </label><span class="required">*</span>
 					<textarea
-						name="cover-letter"
+						id="cover-letter"
 						type="textarea"
 						rows="10"
 						cols="30"
-						required
-					></textarea>
+						placeholder="Tell us about yourself"
+                    ></textarea>
+                    <small>Error message</small>
 				</div>
 
                 <div class="row">
@@ -75,7 +81,8 @@
 				
 			</form>
 		</div>
-        <script src="scripts/form-validation.js"></script>
+		<script src="scripts/form-validation.js"></script>
+		<script src="scripts/saveToArray.js"></script>
         <script src="main.js"></script>
 	</body>
 </html>

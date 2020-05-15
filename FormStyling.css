@@ -1,6 +1,6 @@
 html {
     font-family: Helvetica, sans-serif;
-    background: rgb(155, 209, 229);
+    background: #B1CBBB;
     
 }
 
@@ -55,7 +55,31 @@ header h2 {
     width: 100%;
 }
 
+.row small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: red;
+}
+
 .required {
     color: red;
   }
 
+input[type="submit" i] {
+    background-color: #588c7e;
+    text-transform: uppercase;
+    color: #f0f0f0;
+    font-size: 16px;
+}
+
+.row.error input, .row.error select, .row.error textarea {
+    border-color: red;
+    visibility: visible;
+}
+
+.row.error small {
+    visibility: visible;
+    color: red;
+}
