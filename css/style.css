@@ -1,0 +1,209 @@
+body {
+	background: linear-gradient(
+		135deg,
+		#e5ed8ad4 0%,
+		#9ad570 44%,
+		#7bbd4b 100%
+	);
+	color: rgba(0, 0, 0, 0.6);
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+.formContainer {
+	position: relative;
+	background: #ffffff;
+	width: 600px;
+	border-radius: 4px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	margin: 100px auto 100px;
+	overflow: hidden;
+	padding: 4% 0 2% 0;
+}
+form {
+	width: 70%;
+	margin: auto;
+}
+form input {
+	outline: none;
+	display: block;
+	background: rgba(0, 0, 0, 0.1);
+	width: 100%;
+	border: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	padding: 12px 20px;
+	color: rgba(0, 0, 0, 0.6);
+	font-family: inherit;
+	font-size: inherit;
+
+	line-height: inherit;
+	-webkit-transition: 0.3s ease;
+	transition: 0.3s ease;
+	font-weight: 300;
+}
+input:focus {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.24);
+	background: rgba(0, 0, 0, 0.07);
+}
+input:hover {
+	background: rgba(0, 0, 0, 0.07);
+}
+input:invalid {
+	border-color: #900;
+	background-color: #fdd;
+}
+
+input:focus:invalid {
+	outline: none;
+}
+li {
+	list-style: none;
+	display: grid;
+	padding-bottom: 20px;
+}
+li:last-child {
+	padding-top: 20px;
+}
+#btn {
+	outline: none;
+	background: #33852f;
+	width: 100%;
+	border: 0;
+	border-radius: 4px;
+	padding: 12px 20px;
+	color: #ffffff;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: 500;
+	line-height: inherit;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+h1 {
+	padding: 4px 0;
+	color: #33852f;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 20px 0 0;
+}
+h2 {
+	padding: 4px 0;
+	color: #4f4f4f;
+	font-size: 16px;
+	font-weight: 430;
+	text-transform: uppercase;
+	margin: 6px 0 35px;
+}
+.boldText {
+	font-weight: 550;
+}
+label {
+	display: block;
+	margin: 0 0 10px;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+select {
+	width: 100%;
+	height: 50px;
+	font-size: 100%;
+	font-weight: bold;
+	cursor: pointer;
+	font-weight: 300;
+	background-color: rgba(0, 0, 0, 0.1);
+	border: none;
+	border: 0;
+	border-radius: 4px;
+	color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding: 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+}
+select::-ms-expand {
+	display: none;
+}
+.select-icon {
+	position: absolute;
+	margin-top: 7%;
+	right: 11%;
+	width: 60px;
+	height: auto;
+	pointer-events: none;
+	opacity: 0.3;
+
+	padding-left: 5px;
+	z-index: 2;
+}
+select:focus {
+	outline: none !important;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.24);
+	background: rgba(0, 0, 0, 0.07);
+}
+select:hover {
+	background: rgba(0, 0, 0, 0.07);
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+	color: rgba(0, 0, 0, 0.6);
+}
+/* This is our style for the invalid fields */
+input:invalid {
+	background-color: #fdd;
+}
+
+input:focus:invalid {
+	outline: none;
+}
+
+/* This is the style of our error messages */
+.errorPopUp {
+	width: 100%;
+	padding: 0;
+
+	font-size: 80%;
+	color: white;
+	background-color: #a73838;
+	border-radius: 0 0 5px 5px;
+
+	box-sizing: border-box;
+}
+
+.errorPopUp.active {
+	padding: 0.3em;
+}
+input.invalid {
+	border-color: #a73838;
+	background-color: #fdd;
+}
+
+input:focus.invalid {
+	outline: none;
+}
+.requiredError {
+	color: #a73838;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: capitalize;
+	letter-spacing: 0.06em;
+}

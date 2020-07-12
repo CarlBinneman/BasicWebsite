@@ -1,0 +1,22 @@
+{
+  "name": "basicwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/returntralse/BasicWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/returntralse/BasicWebsite/issues"
+  },
+  "homepage": "https://github.com/returntralse/BasicWebsite#readme",
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  }
+}
